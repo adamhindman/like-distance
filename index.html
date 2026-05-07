@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Like Distance</title>
+        <link rel="stylesheet" href="/src/style.css" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Like Distance</h1>
+            </header>
+
+            <section class="card">
+                <div class="section-label">Step 1 — Set a distance</div>
+
+                <div class="subsection">
+                    <div class="input-row">
+                        <input
+                            type="text"
+                            id="city-a"
+                            placeholder="Seattle"
+                            autocomplete="off"
+                        />
+                        <span class="sep">→</span>
+                        <input
+                            type="text"
+                            id="city-b"
+                            placeholder="Portland"
+                            autocomplete="off"
+                        />
+                        <button id="calc-btn">Calculate</button>
+                    </div>
+                    <div id="calc-error" class="error hidden"></div>
+                </div>
+
+                <div class="or-divider">or enter a distance directly</div>
+
+                <div class="subsection">
+                    <div class="input-row">
+                        <input
+                            type="number"
+                            id="manual-dist"
+                            placeholder="1000"
+                            min="1"
+                            style="max-width: 8rem"
+                        />
+                        <select id="unit-select">
+                            <option value="km">km</option>
+                            <option value="miles">miles</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="distance-badge" class="distance-badge hidden"></div>
+            </section>
+
+            <section class="card">
+                <div class="section-label">Step 2 — Find places</div>
+                <div class="input-row">
+                    <input
+                        type="text"
+                        id="origin-input"
+                        placeholder="London"
+                        autocomplete="off"
+                    />
+                    <button id="find-btn">Find places</button>
+                </div>
+                <div id="find-error" class="error hidden"></div>
+            </section>
+
+            <section class="card hidden" id="results-section">
+                <div class="section-label" id="results-label"></div>
+                <ul id="results-list"></ul>
+            </section>
+        </main>
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
