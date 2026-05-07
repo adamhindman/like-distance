@@ -2,7 +2,7 @@
 
 **https://like-distance.netlify.app**
 
-Make distances tangible. Enter two cities to get the distance between them, then find well-known places that are roughly the same distance from anywhere in the world.
+Enter two cities to get the straight-line distance between them, then find well-known places that are roughly the same distance from anywhere in the world.
 
 ## How it works
 
